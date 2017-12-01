@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>STATES</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/data.js"></script>
+
+</head>
+
+<body ng-app="states_iq">
+
+    <div ng-controller="data_stuff">
+
+        <h1>States Qiuz Results</h1>
+
+        <form>
+
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>id</th>
+                    <th>name</th>
+                    <th>gender</th>
+                    <th>score</th>
+                    <th>state</th>
+                    <th>help?</th>
+                    <th>bumped up score</th>
+
+                </tr>
+            </thead>
+
+            <tbody ng-repeat="student in students">
+                <td>{{students.name}}</td>
+            </tbody>
+
+        </table>
+    </div>
+
+</body>
+
+</html>
